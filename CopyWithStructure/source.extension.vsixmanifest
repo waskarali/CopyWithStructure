@@ -4,6 +4,7 @@
         <Identity Id="CopyWithStructure.5b3642f3-3335-490d-98fd-149c9248f86f" Version="1.0" Language="en-US" Publisher="Oswaldo Waskarali" />
         <DisplayName>CopyWithStructure</DisplayName>
         <Description xml:space="preserve">Copy files with folder structure.</Description>
+        <MoreInfo>https://github.com/waskarali/CopyWithStructure.git</MoreInfo>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
     </Metadata>
