@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Include href="KnownImageIds.vsct"/>
+	<Include href="VSGlobals.vsct"/>
+
+	<Commands package="CopyWithStructure">
+
+		<!--This section defines the elements the user can interact with, like a menu command or a button
+		or combo box in a toolbar. -->
+		<Buttons>
+			<Button guid="CopyWithStructure" id="CopyWithStructureCommand" priority="0x0500" type="Button">
+				<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_FOLDER_EXPLORE" />
+				<Icon guid="ImageCatalogGuid" id="Copy" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Copy Files With Folder Structure</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+		
+	</Commands>
+
+	<CommandPlacements>
+		<!--<CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInVs" priority="0x0500">
+            <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_SOLUTION_EXPLORE"/>
+        </CommandPlacement>
+        <CommandPlacement guid="guidOpenInVsCmdSet" id="OpenInVs" priority="0x0500">
+            <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_EXPLORE"/>
+        </CommandPlacement>-->
+		<CommandPlacement guid="CopyWithStructure" id="CopyWithStructureCommand" priority="0x0500">
+			<Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_ITEM_OPEN"/>
+		</CommandPlacement>
+	</CommandPlacements>
+	
+	
+
+	<Symbols>
+		<GuidSymbol name="CopyWithStructure" value="{68df914f-d863-40a3-b884-072b82910ffc}">			
+			<IDSymbol name="CopyWithStructureCommand" value="0x0100" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
